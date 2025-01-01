@@ -41,7 +41,7 @@ func HomeIndex() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<main>Home Page</main>")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<main><h1 class=\"text-3xl font-bold underline bg-black text-white h-screen grid place-content-center\">Hello world!</h1></main>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
