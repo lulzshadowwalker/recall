@@ -4,14 +4,14 @@ import "github.com/lulzshadowwalker/woosh/internal/template/icon"
 
 templ HomeIndex() {
 	@App() {
-		<main class="m-6 h-[calc(100dvh-1.5rem-1.5rem)] relative grid place-content-center">
-			<ul class="text-4xl font-semibold tracking-tight space-y-1 text-center">
+		<main class="m-6 min-h-[calc(100dvh-1.5rem-1.5rem)] relative flex flex-col">
+			<ul class="text-4xl font-semibold tracking-tight space-y-1 text-center my-auto">
 				<li>capture.</li>
 				<li>organize.</li>
 				<li>secure.</li>
 				<li>reflect.</li>
 			</ul>
-			<section class="absolute start-0 bottom-0 max-w-prose">
+			<section class="md:absolute start-0 bottom-0 max-w-prose mt-12">
 				<div class="font-light text-neutral-600 dark:text-neutral-400">
 					A <span class="font-normal text-primary">Quasso Studio</span> Project
 				</div>
