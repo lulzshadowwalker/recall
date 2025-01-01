@@ -1,0 +1,37 @@
+package icon
+
+type ArrowUpBrokenProps struct {
+	Class string
+	Color string
+}
+
+templ ArrowUpBroken(props ArrowUpBrokenProps) {
+	if props.Color == "" {
+		props.Color = "#000000"
+	}
+	<svg
+		id="Arrow - Up"
+		width="24"
+		height="24"
+		viewBox="0 0 24 24"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+		class={ props.Class }
+	>
+		<path
+			d="M12.2446 16.7271V19.5001"
+			stroke={ props.Color }
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		></path>
+		<path d="M12.2446 4.5V13.123" stroke={ props.Color } stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+		<path
+			d="M18.2751 10.5502C18.2751 10.5502 15.0151 4.50024 12.2551 4.50024C9.4851 4.50024 6.2251 10.5502 6.2251 10.5502"
+			stroke={ props.Color }
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		></path>
+	</svg>
+}

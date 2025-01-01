@@ -1,11 +1,35 @@
 package template
 
+import "github.com/lulzshadowwalker/woosh/internal/template/icon"
+
 templ HomeIndex() {
 	@App() {
-		<main>
-			<h1 class="text-3xl font-bold bg-black text-white h-screen grid place-content-center">
-				Hello Lulzie!
-			</h1>
+		<main class="m-6 h-[calc(100dvh-1.5rem-1.5rem)] relative grid place-content-center">
+			<ul class="text-4xl font-semibold tracking-tight space-y-1 text-center">
+				<li>capture.</li>
+				<li>organize.</li>
+				<li>secure.</li>
+				<li>reflect.</li>
+			</ul>
+			<section class="absolute start-0 bottom-0 max-w-prose">
+				<div class="font-light text-neutral-600 dark:text-neutral-400">
+					A <span class="font-normal text-primary">Quasso Studio</span> Project
+				</div>
+				<h1 class="my-5 text-3xl font-bold tracking-tight text-balance">Woosh | Journaling at the Speed of Thought.</h1>
+				<p class="my-4 text-neutral-600 dark:text-neutral-400 font-light max-w-prose">
+					Woosh is designed to get out of your way — no load times, no friction.
+					Capture thoughts instantly, organize ideas effortlessly, and reflect whenever inspiration strikes.
+					End-to-end encryption ensures your moments stay yours, forever.
+					Focus on what matters. Woosh handles the rest, quietly and efficiently.
+				</p>
+				<button class="btn btn-primary">
+					Continue with Google
+					@icon.ArrowUpBroken(icon.ArrowUpBrokenProps{Class: "rotate-90", Color: "oklch(var(--pc))"})
+				</button>
+			</section>
+			<!-- Decorations -->
+			<div class="absolute top-0 start-2 w-40 h-[1px] bg-primary"></div>
+			<div class="absolute top-2 start-0 h-52 w-[1px] bg-primary"></div>
 		</main>
 	}
 }
