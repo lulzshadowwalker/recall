@@ -4,11 +4,14 @@ go 1.23
 
 toolchain go1.23.4
 
-require github.com/pocketbase/pocketbase v0.23.12
+require (
+	github.com/a-h/templ v0.2.793
+	github.com/pocketbase/pocketbase v0.23.12
+	golang.org/x/tools v0.28.0
+)
 
 require (
 	github.com/AlecAivazis/survey/v2 v2.3.7 // indirect
-	github.com/a-h/templ v0.2.793 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
 	github.com/aws/aws-sdk-go-v2 v1.32.7 // indirect
 	github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.6.7 // indirect
