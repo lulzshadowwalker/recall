@@ -41,7 +41,7 @@ func WelcomeIndex() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			templ_7745c5c3_Err = templ.WriteWatchModeString(templ_7745c5c3_Buffer, 1)
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<main class=\"m-6 min-h-[calc(100dvh-1.5rem-1.5rem)] relative flex flex-col\"><ul class=\"text-4xl font-semibold tracking-tight space-y-1 text-center my-auto\"><li>capture.</li><li>organize.</li><li>secure.</li><li>reflect.</li></ul><section class=\"md:absolute start-0 bottom-0 max-w-prose mt-12\"><div class=\"font-light text-neutral-600 dark:text-neutral-400\">Made with <i class=\"fa fa-heart fa-beat\" style=\"color: tomato; margin-inline: 0.2rem;\"></i> by the engineers at <span class=\"font-normal text-primary\">Quasso Studio</span></div><h1 class=\"my-5 text-3xl font-bold tracking-tight text-balance\">Woosh | Journaling at the Speed of Thought.</h1><p class=\"my-4 text-neutral-600 dark:text-neutral-400 font-light max-w-prose\">Woosh is designed to get out of your way — no load times, no friction. Capture thoughts instantly, organize ideas effortlessly, and reflect whenever inspiration strikes. End-to-end encryption ensures your moments stay yours, forever. Focus on what matters. Woosh handles the rest, quietly and efficiently.</p>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -49,7 +49,7 @@ func WelcomeIndex() templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			templ_7745c5c3_Err = templ.WriteWatchModeString(templ_7745c5c3_Buffer, 2)
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</section><!-- Decorations --><div class=\"absolute top-0 start-2 w-[18%] h-[1px] bg-primary\"></div><div class=\"absolute top-2 start-0 h-[32%] w-[1px] bg-primary\"></div></main>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}

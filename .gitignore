@@ -203,3 +203,5 @@ pb_data/
 tmp/
 
 *_templ.txt
+
+bin/

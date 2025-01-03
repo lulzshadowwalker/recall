@@ -41,7 +41,7 @@ func HomeIndex() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			templ_7745c5c3_Err = templ.WriteWatchModeString(templ_7745c5c3_Buffer, 1)
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div>Welcome back, ")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -54,7 +54,7 @@ func HomeIndex() templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			templ_7745c5c3_Err = templ.WriteWatchModeString(templ_7745c5c3_Buffer, 2)
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</div><button class=\"btn btn-primary\" hx-post=\"/auth/logout\">Logout <i class=\"fa fa-right-from-bracket\"></i></button><script type=\"module\">\n  import {logout} from \"/public/auth.js\"\n\n  document.querySelector(\"button\").addEventListener(\"click\", () => {\n    //  WARN: Am I certain this will always be called ? because of the hx-post\n    logout()\n  })\n</script>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}

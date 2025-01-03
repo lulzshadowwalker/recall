@@ -29,7 +29,7 @@ func GoogleAuthButton() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templ.WriteWatchModeString(templ_7745c5c3_Buffer, 1)
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<button id=\"google-auth-btn\" class=\"btn btn-primary\"><i class=\"fa fa-google\"></i> Continue with Google</button><script type=\"module\">\n  import { authenticate } from \"/public/auth.js\";\n\n  document.addEventListener(\"DOMContentLoaded\", () => {\n    const $btn = document.getElementById(\"google-auth-btn\");\n    $btn.addEventListener(\"click\", handleAuthentication);\n\n    async function handleAuthentication() {\n      const $icon = $btn.querySelector(\"i\");\n\n      try {\n        $icon.classList.add(\"fa-spin\");\n        await authenticate();\n\n        window.location.href = \"/\";\n      } catch (e) {\n        console.error(e);\n      } finally {\n        $icon.classList.remove(\"fa-spin\");\n      }\n    }\n  });\n</script>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
