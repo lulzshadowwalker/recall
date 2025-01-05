@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/lulzshadowwalker/woosh/internal/template"
+	"github.com/lulzshadowwalker/recall/internal/template"
 	"github.com/pocketbase/pocketbase/core"
 )
 

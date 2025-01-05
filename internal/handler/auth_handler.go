@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/lulzshadowwalker/woosh/internal/http/cookie"
+	"github.com/lulzshadowwalker/recall/internal/http/cookie"
 	"github.com/pocketbase/pocketbase/core"
 )
 

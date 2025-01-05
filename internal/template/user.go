@@ -3,7 +3,7 @@ package template
 import (
 	"context"
 
-	"github.com/lulzshadowwalker/woosh/internal/model"
+	"github.com/lulzshadowwalker/recall/internal/model"
 )
 
 func user(ctx context.Context) *model.User {

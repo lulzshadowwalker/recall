@@ -1,4 +1,4 @@
-module github.com/lulzshadowwalker/woosh
+module github.com/lulzshadowwalker/recall
 
 go 1.23
 

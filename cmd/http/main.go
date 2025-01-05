@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/lulzshadowwalker/woosh/internal/handler"
-	"github.com/lulzshadowwalker/woosh/internal/http/middleware"
+	"github.com/lulzshadowwalker/recall/internal/handler"
+	"github.com/lulzshadowwalker/recall/internal/http/middleware"
 	"github.com/pocketbase/pocketbase"
 	"github.com/pocketbase/pocketbase/apis"
 	"github.com/pocketbase/pocketbase/core"
@@ -34,7 +34,7 @@ func main() {
 			return fmt.Errorf("failed to create new auth token %w", err)
 		}
 
-		const authTokenKey = "woosh-auth-token"
+		const authTokenKey = "recall-auth-token"
 
 		e.SetCookie(&http.Cookie{
 			Name:     authTokenKey,

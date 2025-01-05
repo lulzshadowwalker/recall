@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-const authKey = "woosh-auth-token"
+const authKey = "recall-auth-token"
 
 var (
 	ErrEmptyToken = errors.New("access token cannot be empty")

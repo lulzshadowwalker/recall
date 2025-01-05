@@ -3,8 +3,8 @@ package auth
 import (
 	"log/slog"
 
-	"github.com/lulzshadowwalker/woosh/internal/http/cookie"
-	"github.com/lulzshadowwalker/woosh/internal/model"
+	"github.com/lulzshadowwalker/recall/internal/http/cookie"
+	"github.com/lulzshadowwalker/recall/internal/model"
 	"github.com/pocketbase/pocketbase/core"
 )
 

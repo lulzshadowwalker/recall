@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/lulzshadowwalker/woosh/internal/http/auth"
+	"github.com/lulzshadowwalker/recall/internal/http/auth"
 	"github.com/pocketbase/pocketbase/core"
 )
 
